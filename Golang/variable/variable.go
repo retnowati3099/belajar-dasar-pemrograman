@@ -35,8 +35,12 @@ func main() {
 	fmt.Println(firstName)
 	fmt.Println(lastName)
 	fmt.Println(fullName)
-	fmt.Print(firstName + " " + lastName + "\n")
+
+	// output sama dengan sintaks yang berbeda
 	fmt.Println(firstName + " " + lastName)
+	fmt.Println(firstName, lastName)
+	fmt.Print(firstName + " " + lastName + "\n")
+	fmt.Print(firstName, " ", lastName, "\n")
 	fmt.Printf(firstName + " " + lastName + "\n")
 	fmt.Printf("%s %s \n", firstName, lastName)
 
