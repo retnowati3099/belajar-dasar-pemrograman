@@ -35,6 +35,10 @@ func main() {
 	fmt.Println(firstName)
 	fmt.Println(lastName)
 	fmt.Println(fullName)
+	fmt.Print(firstName + " " + lastName + "\n")
+	fmt.Println(firstName + " " + lastName)
+	fmt.Printf(firstName + " " + lastName + "\n")
+	fmt.Printf("%s %s \n", firstName, lastName)
 
 	fmt.Println(myName)
 	fmt.Println(weight)
