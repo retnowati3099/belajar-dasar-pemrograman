@@ -33,6 +33,13 @@ func main() {
 	fmt.Println(partial)
 	fmt.Println(full)
 
+	// inisialisasai spesifik elemen
+	arr_num5 := [3]int{1: 10, 2: 5}
+	fmt.Println(arr_num5)
+
+	//panjang array menggunkaan fungsi len()
+	fmt.Println(len(name))
+	fmt.Println(len(arr_num3))
 }
 
 // Deklarasi Array
