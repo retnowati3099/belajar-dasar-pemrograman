@@ -33,7 +33,7 @@ func main() {
 
 // Terdapat 3 fungsi untuk menampilkan teks, yaitu Print(), Println, dan Printf()
 // Fungsi Print() menampilkan argumen dengan format default
-// Fungsi Println sama dengan Print() tetapi spasi ditambahkan di antara argumen, dan baris baru ditambahkan di akhir
+// Fungsi Println() sama dengan Print() tetapi spasi ditambahkan di antara argumen, dan baris baru ditambahkan di akhir
 // Fungsi Printf() memformat argumen berdasarkan pada formmating verb yang diberikan kemudian mencetak mereka
 // %v digunakan untuk mencetak nilai dari argumen
 // %T diguanakn untuk mencetak tipe dari argumen
