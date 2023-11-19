@@ -1,3 +1,10 @@
 go 1.21.4
 
-use ./..
+use (
+	./Golang/array
+	./Golang/constant
+	./Golang/hello-world
+	./Golang/luas-lingkaran
+	./Golang/output-function
+	./Golang/variable
+)
