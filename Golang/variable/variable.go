@@ -23,6 +23,8 @@ func main() {
 	height = 142
 
 	var x, y, z int = 1, 2, 3
+	var p, q, r string
+	p, q, r = "satu", "dua", "tiga"
 	var a, b = "Afriska", 150
 	c, d := "Retno", 142
 
@@ -31,6 +33,8 @@ func main() {
 		f int    = 1
 		g string = "hello"
 	)
+
+	_ = "Itaw Onter" // variabel underscore
 
 	fmt.Println(firstName)
 	fmt.Println(lastName)
@@ -58,6 +62,10 @@ func main() {
 	fmt.Println(y)
 	fmt.Println(z)
 
+	fmt.Println(p)
+	fmt.Println(q)
+	fmt.Println(r)
+
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
@@ -77,4 +85,11 @@ Aturan penamaan variabel:
 5. Tidak ada batasan panjang nama variabel
 6. Nama variabel tidak dapat berisi spasi
 7. Yang termasuk keyword dalam bahasa Go tidak boleh dijadikan sebagai nama variabel
+*/
+
+/*
+Di Golang, semua variabel yang dideklarasikan harus digunakan.
+Jika terdapat variabel yang tidak digunakan tapi dideklarasikan, error akan muncul pada saat kompilasi dan program tidak akan bisa dirun.
+Underscore (_) adalah reserved variable (keranjang sampah), dapat digunakan untuk menampung nilai yang tidak dipakai.
+Biasanya digunakan untuk menampung nilai balik fungsi yang tidak digunakan
 */
