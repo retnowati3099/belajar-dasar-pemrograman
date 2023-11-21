@@ -13,5 +13,4 @@ func main() {
 	jumlah = num1 + num2
 
 	println(num1, "+", num2, "=", jumlah)
-
 }
