@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/penjumlahan-dua-bilangan
 	./Golang/array
 	./Golang/constant
 	./Golang/hello-world
