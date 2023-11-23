@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/percabangan/if-elseif-else
 	./Golang/jarak
 	./Golang/penjumlahan-dua-bilangan
 	./Golang/array

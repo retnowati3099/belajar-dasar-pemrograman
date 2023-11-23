@@ -11,12 +11,12 @@ jarak = kecepatan * waktu;
 console.log(
 	`Jika kecepatan ${kecepatan} km/jam dan waktu tempuh ${waktu} jam, maka jarak yang ditempuh adalah ${jarak} km.`
 );
-console.log(
-	"Jika kecepatan " +
-		kecepatan +
-		" km/jam dan waktu tempuh " +
-		waktu +
-		" jam, maka jarak yang ditempuh adalah " +
-		jarak +
-		" km."
-);
+// console.log(
+// 	"Jika kecepatan " +
+// 		kecepatan +
+// 		" km/jam dan waktu tempuh " +
+// 		waktu +
+// 		" jam, maka jarak yang ditempuh adalah " +
+// 		jarak +
+// 		" km."
+// );

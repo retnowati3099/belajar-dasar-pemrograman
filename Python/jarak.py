@@ -12,5 +12,5 @@ print(
     + str(jarak)
     + " km."
 )
-output = "Jika kecepatan {} km/jam dan waktu tempuh {} jam, maka jarak yang ditempuh adalah {} km."
-print(output.format(kecepatan, waktu, jarak))
+# output = "Jika kecepatan {} km/jam dan waktu tempuh {} jam, maka jarak yang ditempuh adalah {} km."
+# print(output.format(kecepatan, waktu, jarak))
