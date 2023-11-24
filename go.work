@@ -1,6 +1,8 @@
 go 1.21.4
 
 use (
+	./Golang/percabangan/konversi-nilai-angka-ke-huruf
+	./Golang/percabangan/variabel-temporary
 	./Golang/percabangan/if-elseif-else
 	./Golang/jarak
 	./Golang/penjumlahan-dua-bilangan
