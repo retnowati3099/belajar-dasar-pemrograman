@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/percabangan/bilangan-terbesar
 	./Golang/percabangan/konversi-nilai-angka-ke-huruf
 	./Golang/percabangan/variabel-temporary
 	./Golang/percabangan/if-elseif-else

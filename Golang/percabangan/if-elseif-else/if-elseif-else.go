@@ -3,8 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// penggunaan if-else di golang sama seperti bahasa pemrograman lain, yang membedakan adalah tanda kurungnya, di golang tidak perlu ditulis
-
 	var num int
 
 	fmt.Print("Masukkan sembarang bilangan: ")
@@ -18,3 +16,6 @@ func main() {
 		fmt.Println(num, "adalah bilangan negatif")
 	}
 }
+
+// penggunaan if-else di golang sama seperti bahasa pemrograman lain, yang membedakan adalah tanda kurungnya, di golang tidak perlu ditulis
+// Kurung kurawal harus dituliskan meski isinya hanya satu blog statement
