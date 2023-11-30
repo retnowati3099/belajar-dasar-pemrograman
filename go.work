@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/pola-bintang
 	./Golang/perulangan
 	./Golang/percabangan/switch-case
 	./Golang/percabangan/bilangan-terbesar
