@@ -40,6 +40,48 @@ func main() {
 	//panjang array menggunkaan fungsi len()
 	fmt.Println(len(name))
 	fmt.Println(len(arr_num3))
+
+	var fruits [3]string // deklarasi array
+	fruits[0] = "pineapple"
+	fruits[1] = "apple"
+	fruits[2] = "orange"
+	fmt.Println(fruits[0], fruits[1], fruits[2])
+	fmt.Println("Jumlah elemen di dalam array fruits adalah", len(fruits))
+
+	var flowers [3]string
+
+	// inisialisasi nilai array dengan gaya vertikal
+	flowers = [3]string{"sunflower", "rose", "jasmine"}
+	fmt.Println(flowers)
+
+	// inisialisasi nilai array dengan gaya horisontal
+	flowers = [3]string{
+		"dandelion",
+		"tulip",
+		"hibiscus",
+	}
+	fmt.Println(flowers)
+
+	var matriks1 = [2][2]int{{1, 2}, {5, 6}}
+	var matriks2 = [2][2]int{[2]int{1, 2}, [2]int{5, 6}}
+	fmt.Println(matriks1)
+	fmt.Println(matriks2)
+
+	// perulangan elemen array menggunakan keyword for
+	var animals = [3]string{"cow", "goat", "sheep"}
+	for i := 0; i < len(animals); i++ {
+		fmt.Printf("Elemen %d: %s\n", i, animals[i])
+	}
+
+	// perulangan elmen array menggunakan keyword for - range
+	for i, animal := range animals {
+		fmt.Printf("Elemen %d: %s\n", i, animal)
+	}
+
+	// penggunaan variabel underscore dalam for - range
+	for _, animal := range animals {
+		fmt.Printf("Nama binatang: %s\n", animal)
+	}
 }
 
 // Deklarasi Array
@@ -47,6 +89,13 @@ func main() {
 // var array_name = [length]datatype{values} <-- panjang didefinisikan
 // atau
 // var array_name = [...]datatype{values} <-- panjang tidak didefinisikan, compiler memutuskan panjang array berdasarkan banyak nilainya
+// atau
+// var array_name [length]datatype
 // 2. Menggunakan tanda :=
 // array_name := [length]datatype{values} atau
 // array_name := [...]datatype{values}
+
+/*
+Inisialisasi
+Inisialisasi array dengan gaya vertikal, tanda koma wajib dituliskan setelah elemen, termasuk elemen terakhir. Jika tidak, maka akan muncul error
+*/
