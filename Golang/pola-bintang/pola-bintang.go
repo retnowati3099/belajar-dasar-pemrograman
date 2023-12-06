@@ -37,4 +37,20 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+	fmt.Println("===========")
+
+	for i := 1; i <= baris; i++ {
+		// spasi
+		for j := 1; j <= i-1; j++ {
+			fmt.Print(" ")
+		}
+
+		// bintang
+		for k := baris; k >= i; k-- {
+			fmt.Print("* ")
+		}
+
+		fmt.Println()
+	}
 }

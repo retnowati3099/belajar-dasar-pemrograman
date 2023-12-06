@@ -45,5 +45,24 @@ int main()
         cout << "\n";
     }
 
+    cout << "===========\n";
+
+    for (int i = 1; i <= baris; i++)
+    {
+        // spasi
+        for (int j = 1; j < i; j++)
+        {
+            cout << " ";
+        }
+
+        // bintang
+        for (int k = baris; k >= i; k--)
+        {
+            cout << "* ";
+        }
+
+        cout << "\n";
+    }
+
     return 0;
 }

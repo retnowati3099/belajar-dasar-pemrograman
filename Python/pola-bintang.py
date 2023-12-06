@@ -24,3 +24,16 @@ for i in range(1, baris + 1):
         print("* ", end="")
 
     print()
+
+print("============")
+
+for i in range(1, baris + 1):
+    # spasi
+    for j in range(1, i):
+        print(" ", end="")
+
+    # bintang
+    for k in range(baris, i - 1, -1):
+        print("* ", end="")
+
+    print()
