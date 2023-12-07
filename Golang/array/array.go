@@ -82,6 +82,12 @@ func main() {
 	for _, animal := range animals {
 		fmt.Printf("Nama binatang: %s\n", animal)
 	}
+
+	// alokasi elemen array dengan keyword make
+	var foods = make([]string, 2)
+	foods[0] = "meatball"
+	foods[1] = "noodle"
+	fmt.Println(foods)
 }
 
 // Deklarasi Array
@@ -98,4 +104,9 @@ func main() {
 /*
 Inisialisasi
 Inisialisasi array dengan gaya vertikal, tanda koma wajib dituliskan setelah elemen, termasuk elemen terakhir. Jika tidak, maka akan muncul error
+*/
+
+/*
+alokasi elemen array dengan keyword make
+Parameter pertama keyword make diisi dengan tipe data elemen array yang diinginkan, parameter kedua adalah jumlah elemennya
 */
