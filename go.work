@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/slice
 	./Golang/summation
 	./Golang/tabel-perkalian
 	./Golang/pola-bintang
