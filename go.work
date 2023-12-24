@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/function
 	./Golang/slice
 	./Golang/summation
 	./Golang/tabel-perkalian
