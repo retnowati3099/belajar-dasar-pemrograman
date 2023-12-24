@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strings"
 )
 
@@ -21,6 +22,14 @@ func main() {
 	fmt.Scan(&dec)
 	var hasil = decimalToBiner(dec)
 	fmt.Println(hasil)
+
+	// fungsi multiple return, ex: menghitung luas dan keliling lingkaran
+	var radius float64
+	fmt.Printf("Masukkan jari - jari lingkaran: ")
+	fmt.Scan(&radius)
+
+	var luas, keliling = luasDanKelilingLingkaran(radius)
+	fmt.Printf("Lingkaran dengan jari - jari %v memiliki luas %.2f dan keliling %.2f\n", radius, luas, keliling)
 }
 
 func printMessage(message string, arr []string) {
@@ -45,6 +54,14 @@ func decimalToBiner(dec int) []int {
 		arrBiner[i], arrBiner[n-i-1] = arrBiner[n-i-1], arrBiner[i]
 	}
 	return arrBiner
+}
+
+func luasDanKelilingLingkaran(radius float64) (float64, float64) {
+	var luas = math.Pi * math.Pow(radius, 2) // hitung luas
+
+	var keliling = 2 * math.Pi * radius // hitung keliling
+
+	return luas, keliling
 }
 
 /*
