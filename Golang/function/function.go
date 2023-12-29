@@ -27,9 +27,15 @@ func main() {
 	var radius float64
 	fmt.Printf("Masukkan jari - jari lingkaran: ")
 	fmt.Scan(&radius)
-
 	var luas, keliling = luasDanKelilingLingkaran(radius)
 	fmt.Printf("Lingkaran dengan jari - jari %v memiliki luas %.2f dan keliling %.2f\n", radius, luas, keliling)
+
+	// fungsi dengan predefined return value
+	var sisi float64
+	fmt.Printf("Masukkan sisi persegi: ")
+	fmt.Scan(&sisi)
+	luasPersegi, kelilingPersegi := luasDanKelilingPersegi(sisi)
+	fmt.Printf("Persegi dengan sisi %v memiliki luas %v dan keliling %v\n", sisi, luasPersegi, kelilingPersegi)
 }
 
 func printMessage(message string, arr []string) {
@@ -62,6 +68,12 @@ func luasDanKelilingLingkaran(radius float64) (float64, float64) {
 	var keliling = 2 * math.Pi * radius // hitung keliling
 
 	return luas, keliling
+}
+
+func luasDanKelilingPersegi(sisi float64) (luas float64, keliling float64) {
+	luas = math.Pow(sisi, 2)
+	keliling = 4 * sisi
+	return
 }
 
 /*
