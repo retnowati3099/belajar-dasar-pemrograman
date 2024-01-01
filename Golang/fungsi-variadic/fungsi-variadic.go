@@ -3,7 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var avg = calculate(1, 2, 3, 4, 5, 6, 7, 8, 9)
+	// pengisian parameter fungsi variadic menggunakan data slice
+	var numbers = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var avg = calculate(numbers...)
+
+	// atau
+
+	// var avg = calculate(1, 2, 3, 4, 5, 6, 7, 8, 9)
 	var msg = fmt.Sprintf("Rata - rata: %.2f", avg)
 	fmt.Println(msg)
 }
