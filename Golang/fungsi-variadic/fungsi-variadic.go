@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	// pengisian parameter fungsi variadic menggunakan data slice
@@ -12,6 +15,12 @@ func main() {
 	// var avg = calculate(1, 2, 3, 4, 5, 6, 7, 8, 9)
 	var msg = fmt.Sprintf("Rata - rata: %.2f", avg)
 	fmt.Println(msg)
+
+	// fungsi dengan parameter biasa & variadic
+	myHobby("Retno Wati", "coding", "reading")
+
+	var hobbies = []string{"coding", "reading"}
+	myHobby("Retno Wati", hobbies...)
 }
 
 func calculate(numbers ...int) float64 {
@@ -22,6 +31,12 @@ func calculate(numbers ...int) float64 {
 	var avg = float64(total) / float64(len(numbers))
 
 	return avg
+}
+
+func myHobby(name string, hobbies ...string) {
+	var hobbiesAsString = strings.Join(hobbies, ", ")
+	fmt.Printf("Hello, my name is %s\n", name)
+	fmt.Printf("My hobbies are %s\n", hobbiesAsString)
 }
 
 /*
@@ -36,6 +51,8 @@ Fungsi fmt.Sprintf() pada dasarnya sama dengan fmt.Printf(), hanya saja fungsi i
 
 Tipe data jika ditulis sebagai fungsi (ada tanda kurungnya) berguna untuk casting. Casting adalah teknik untuk konversi tipe sebauh data ke tipe lain.
 
-OPerasi bilangan (perkalian, pembagian, dll) di GO hanya bisa dilakukan jika tipe datanya sejenis.
+Operasi bilangan (perkalian, pembagian, dll) di GO hanya bisa dilakukan jika tipe datanya sejenis.
+
+Parameter variadic dapat dikombinasikan dengan parameter biasa, dengan syarat parameter vaiadic-nya harus diposisikan di akhir
 
 */
