@@ -1,6 +1,8 @@
 go 1.21.4
 
 use (
+	./Golang/faktorial-rekursif
+	./Golang/simple-array-sum
 	./Golang/fungsi-variadic
 	./Golang/solveMeFirst
 	./Golang/function
