@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/iife
 	./Golang/fungsi-closure
 	./Golang/faktorial-rekursif
 	./Golang/simple-array-sum
