@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/pointer
 	./Golang/closure-sbg-nilai-kembalian
 	./Golang/iife
 	./Golang/fungsi-closure
