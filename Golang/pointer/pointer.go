@@ -27,6 +27,11 @@ func main() {
 
 	change(&numC, 10)
 	fmt.Println("After: ", numC)
+
+	// menampilkan tulisan "Praktikum Pemrograman" menggunakan variabel pointer
+	var sentence1 string = "Praktikum Pemrograman"
+	var sentence2 *string = &sentence1
+	fmt.Println("Sentence2 : ", *sentence2)
 }
 
 func change(num *int, value int){
