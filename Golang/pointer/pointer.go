@@ -20,6 +20,17 @@ func main() {
 	fmt.Println("Address of numA: ", &numA)
 	fmt.Println("Value of numB: ", *numB)
 	fmt.Println("Address of numB: ", numB)
+
+	// parameter pointer
+	var numC = 5
+	fmt.Println("Before: ",numC)
+
+	change(&numC, 10)
+	fmt.Println("After: ", numC)
+}
+
+func change(num *int, value int){
+	*num = value
 }
 
 /*
@@ -32,4 +43,5 @@ func main() {
 - Variabel pointer tidak bisa menampung nilai yang bukan pointer, dan sebaliknya variabel biasa tidak bisa menampung nilai pointer.
 - Variabel biasa bisa diambil nilai pointernya dengan cara menambahkan tanda ampersand (&) tepat sebelum nama variabel. Metode ini disebut dengan referencing.
 - Nilai asli variabel pointer juga bisa diambil dengan cara menambahkan tanda asterik (*) tepat sebelum nama variabel. Metode ini disebut deferencing.
+- Penerapan pointer sebagai parameter kurang lebih sama dengan cara mendeklarasikan parameter sebagai pointer
 */
