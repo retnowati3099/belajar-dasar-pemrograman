@@ -23,7 +23,7 @@ func main() {
 
 	// parameter pointer
 	var numC = 5
-	fmt.Println("Before: ",numC)
+	fmt.Println("Before: ", numC)
 
 	change(&numC, 10)
 	fmt.Println("After: ", numC)
@@ -32,10 +32,33 @@ func main() {
 	var sentence1 string = "Praktikum Pemrograman"
 	var sentence2 *string = &sentence1
 	fmt.Println("Sentence2 : ", *sentence2)
+
+	// program dengan fungsi dan variabel pointer untuk menukar dua isi variabel biasa
+	var a, b int
+
+	fmt.Printf("Masukkan nilai sembarang bilangan ke-1 : ")
+	fmt.Scan(&a)
+	fmt.Printf("Masukkan nilai sembarang bilangan ke-2 : ")
+	fmt.Scan(&b)
+
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", b)
+
+	tukar(&a, &b)
+
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", b)
 }
 
-func change(num *int, value int){
+func change(num *int, value int) {
 	*num = value
+}
+
+func tukar(num1, num2 *int) {
+	var temp int
+	temp = *num1
+	*num1 = *num2
+	*num2 = temp
 }
 
 /*
