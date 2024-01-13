@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/struct
 	./Golang/pointer
 	./Golang/closure-sbg-nilai-kembalian
 	./Golang/iife
