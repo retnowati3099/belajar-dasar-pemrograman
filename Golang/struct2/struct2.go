@@ -40,6 +40,11 @@ func main() {
 	fmt.Println("Name of employee 4: ", e4.name)
 	fmt.Println("Salary of employee 4: ", e4.salary)
 
+	// variabel object pointer
+	var e5 = employee{name: "cantika putri askawati", salary: 8000000}
+	var e6 *employee = &e5 // e6 adalah variabel pointer hasil cetakan struct employee. e6 menampung nilai referensi e5
+	fmt.Println(e5)
+	fmt.Println(e6)
 }
 
 /*
