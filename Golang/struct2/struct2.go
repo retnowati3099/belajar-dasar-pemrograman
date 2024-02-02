@@ -9,8 +9,9 @@ type human struct {
 
 // struct human diembed ke dalam struct student, caranya yaitu dengan menuliskan nama struct yang ingin diembed ke dalam body struct target
 type student struct {
-	grade float32
 	human
+	age   int
+	grade float32
 }
 
 // deklarasi struct emloyee dengan 2 property, yaitu name dan salary
@@ -60,8 +61,9 @@ func main() {
 	//embeded struct
 	var s1 = student{}
 	s1.name = "Alika Prettia Askawati"
-	s1.age = 21
+	s1.age = 21 // age of student
 	s1.grade = 4.00
+	s1.human.age = 20 // age of human
 
 	fmt.Println("Student name: ", s1.name)
 	fmt.Println("Student name: ", s1.human.name)
@@ -76,7 +78,8 @@ func main() {
 - Properti variabel objek bisa diakses menggunakan notasi titik
 - Cara inisialisasi variabel object adalah dengan menambahkan kurung kurawal setelah nama struct.
 - Nilai masing - masing properti bisa diisi pada saat isialisasi
- Embedded struct adalah mekanisme untuk menempelkan sebuah struct sebagai properti struct lain
- Embedded struct bersifat mutable, nilai propertinya bisa berubah.
- Khusus untuk properti yang bukan properti asli (properti turunan dari struct lain), bisa diakses dengan mengakses struct parent terlebih dahulu.
+- Embedded struct adalah mekanisme untuk menempelkan sebuah struct sebagai properti struct lain
+- Embedded struct bersifat mutable, nilai propertinya bisa berubah.
+- Khusus untuk properti yang bukan properti asli (properti turunan dari struct lain), bisa diakses dengan mengakses struct parent terlebih dahulu.
+- Jika salah satu nama properti sebuah struct memiliki kesamaan dengan properti milik struct lain yang di-embed, maka pengaksesan propertinya harus dilakukan secara eksplisit atau jelas
 */
