@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type fruit struct {
+	color string
+}
+
 type human struct {
 	name string
 	age  int
@@ -70,6 +74,38 @@ func main() {
 	fmt.Println("Student age: ", s1.age)
 	fmt.Println("Student age: ", s1.human.age)
 	fmt.Println("Student grade: ", s1.grade)
+
+	var h2 = human{
+		name: "Afifah",
+		age:  6,
+	}
+	var s2 = student{human: h2, age: 20, grade: 4.00}
+	fmt.Println("Name: ", s2.name)
+
+	// anonymous struct tanpa pengisian properti
+	var pinapple = struct {
+		fruit
+		num int
+	}{}
+
+	pinapple.fruit = fruit{"yellow"}
+	pinapple.num = 10
+
+	fmt.Println("color: ", pinapple.fruit.color)
+	fmt.Println("num: ", pinapple.num)
+
+	// anonymous struct dengan pengisian properti
+	var apple = struct {
+		fruit
+		num int
+	}{
+		fruit: fruit{color: "red"},
+		num:   5,
+	}
+
+	fmt.Println("color: ", apple.fruit.color)
+	fmt.Println("num: ", apple.num)
+
 }
 
 /*
@@ -82,4 +118,8 @@ func main() {
 - Embedded struct bersifat mutable, nilai propertinya bisa berubah.
 - Khusus untuk properti yang bukan properti asli (properti turunan dari struct lain), bisa diakses dengan mengakses struct parent terlebih dahulu.
 - Jika salah satu nama properti sebuah struct memiliki kesamaan dengan properti milik struct lain yang di-embed, maka pengaksesan propertinya harus dilakukan secara eksplisit atau jelas
+- Pengisian nilai proprty substruct bisa dilakukan dengan langsung memasukkan variabl objek yang tercetak dari struct yang sama
+- Anonymous struct adalah struct yang tidak didklarasikan di awal sebagai tipe data baru, melainkan langsung ke pembuatan objek
+- Dalam pembuatan anonymous struct adalah deklarasi harus diikuti dengan inisialisasi.
+Pada contoh program di atas, pada pineappl stlah deklarasi struktur struct, terdapat kurung kurawal untuk inisialisasi objek. MMeskipun nilai tidak diisikan di awal, kurung kurawal tetap harus ditulis
 */
