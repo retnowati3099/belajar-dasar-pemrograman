@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./Golang/review-materi
 	./Golang/struct2
 	./Golang/struct
 	./Golang/pointer
