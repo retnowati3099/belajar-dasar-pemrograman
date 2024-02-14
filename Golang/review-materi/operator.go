@@ -50,4 +50,15 @@ func main() {
 	fmt.Println(3 > 4)
 	fmt.Println(3 <= 4)
 	fmt.Println(3 < 4)
+
+	// operator logika atau boolean
+	var nilaiAkhir = 90
+	var absensi = 80
+	var lulusNilaiAKhir bool = nilaiAkhir > 80    // true
+	var lulusPresensi bool = absensi > 80         // false
+	var lulus = lulusNilaiAKhir && lulusPresensi  // true and false = false
+	var lulus2 = lulusNilaiAKhir || lulusPresensi // true or false = true
+	fmt.Println(lulus)                            // false
+	fmt.Println(lulus2)
+
 }
