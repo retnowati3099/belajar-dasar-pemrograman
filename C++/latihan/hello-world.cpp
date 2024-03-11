@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
-    cout << "Hello World!\n";
-    cout << "Hello World!";
+    cout << "Hello World!" << endl; // ganti baris
+    cout << "Hello World!\n"; // ganti baris
+    cout << "Hello World!"; // tidak ganti baris
 
     // komentar satu baris
 
