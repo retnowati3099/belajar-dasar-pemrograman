@@ -2,7 +2,17 @@ package main
 
 import "fmt"
 
+// deklarasi konstanta di luar fungsi
+const PI = 3.14
+const (
+	yesterday string = "Minggu"
+	kemarin          // manifest typing
+	isToday3  = true
+)
+
 func main() {
+	fmt.Printf("Phi: %.2f\n", PI)
+
 	// penggunaan konstanta
 	const firstName string = "Retno"
 	fmt.Print("Hallo ", firstName, "!\n")
@@ -19,7 +29,7 @@ func main() {
 	fmt.Print(firstName, " ", lastName, "\n")
 	fmt.Printf("%s %s\n", firstName, lastName)
 
-	// deklarasi multi konstanta
+	// deklarasi multi konstanta di dalam fungsi
 	// deklarasi konstanta dengan tipe data dan nilai yang berbeda
 	const (
 		square         = "kotak" // type inference
@@ -56,4 +66,7 @@ func main() {
 	- Fungsi fmt.Println() nilai parameternya digabung menggunakan penghubung spasi.
 
 	- Ketika tipe data dan nilai tidak dituliskan dalam deklarasi konstanta, maka tipe data dan nilai yang dipergunakan sama seperti konstanta yang dideklarasikan di atasnya
+
+	- Nama konstanta biasanya ditulis dalam huruf besar (UPPERCASE)
+	- Konstanta dapat dideklarasi baik di dalam maupun di luar fungsi
 */
