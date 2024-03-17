@@ -13,4 +13,5 @@ int main()
     /*
     komentar banyak baris
     */
+    return 0;
 }
